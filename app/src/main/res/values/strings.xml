@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Free Fire Aimbot</string>
+    
+    <!-- Video quality options -->
+    <string-array name="video_quality_options">
+        <item>Baixa (2 Mbps)</item>
+        <item>Média (5 Mbps)</item>
+        <item>Alta (10 Mbps)</item>
+        <item>Ultra (20 Mbps)</item>
+    </string-array>
+    
+    <!-- Messages -->
+    <string name="overlay_permission_required">Permissão de overlay necessária</string>
+    <string name="shizuku_permission_required">Permissão Shizuku necessária</string>
+    <string name="screen_capture_permission_required">Permissão de captura de tela necessária</string>
+    
+    <!-- Status messages -->
+    <string name="aimbot_active">Aimbot: ATIVO</string>
+    <string name="aimbot_inactive">Aimbot: INATIVO</string>
+    <string name="recording_started">Gravação iniciada</string>
+    <string name="recording_stopped">Gravação parada</string>
+    
+    <!-- Error messages -->
+    <string name="error_model_not_found">Modelo TensorFlow Lite não encontrado</string>
+    <string name="error_shizuku_not_available">Shizuku não está disponível</string>
+    <string name="error_screen_capture_failed">Falha na captura de tela</string>
+</resources>
+

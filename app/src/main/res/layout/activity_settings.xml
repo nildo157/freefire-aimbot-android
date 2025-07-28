@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configurações do Aimbot"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Carregando..."
+            android:textSize="14sp"
+            android:background="#F0F0F0"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Aimbot Settings -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configurações do Aimbot"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <Switch
+            android:id="@+id/aimbot_enabled_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Habilitar Aimbot"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/sensitivity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensibilidade: 50%"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <SeekBar
+            android:id="@+id/sensitivity_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="50"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/confidence_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confiança: 70%"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <SeekBar
+            android:id="@+id/confidence_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="70"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Visual Settings -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configurações Visuais"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/show_targets_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mostrar alvos detectados"
+            android:checked="true"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/show_crosshair_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mostrar crosshair"
+            android:checked="true"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Recording Settings -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configurações de Gravação"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qualidade do vídeo:"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/video_quality_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/video_quality_options"
+            android:layout_marginBottom="16dp" />
+
+        <CheckBox
+            android:id="@+id/audio_enabled_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gravar áudio"
+            android:checked="true"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Permissions -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Permissões"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/request_shizuku_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solicitar Permissões Shizuku"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/request_screen_capture_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solicitar Captura de Tela"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/grant_permissions_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conceder Todas as Permissões"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Optimization -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otimização"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/optimize_performance_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Otimizar Performance do Jogo"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Info -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nota: Para o funcionamento completo do aimbot, é necessário ter o Shizuku instalado e configurado, além de conceder todas as permissões necessárias."
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:layout_marginTop="24dp"
+            android:background="#FFF3CD"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+</ScrollView>
+

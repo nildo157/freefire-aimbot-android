@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/overlay_background"
+    android:padding="8dp">
+
+    <!-- Status Text -->
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aimbot: INATIVO"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <!-- FPS Counter -->
+    <TextView
+        android:id="@+id/fps_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FPS: 0"
+        android:textColor="#00FF00"
+        android:textSize="10sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Control Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/toggle_aimbot"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="AIM"
+            android:textSize="10sp"
+            android:background="@drawable/button_background"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="SET"
+            android:textSize="10sp"
+            android:background="@drawable/button_background"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/record_button"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="REC"
+            android:textSize="10sp"
+            android:background="@drawable/button_background" />
+
+    </LinearLayout>
+
+</LinearLayout>

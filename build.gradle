@@ -1,0 +1,23 @@
+// Top-level build file
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // FAZENDO O DOWNGRADE DO PLUGIN AQUI
+        classpath 'com.android.tools.build:gradle:7.4.2'
+        // Se houver algo sobre kotlin-gradle-plugin, podemos adicionar depois se precisar
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
